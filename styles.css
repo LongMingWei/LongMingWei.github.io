@@ -1,7 +1,5 @@
-h1.upgraded {
+div.upgraded {
     color: cyan;
-}
-
-p.upgraded {
     text-align: center;
 }
+

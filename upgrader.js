@@ -5,9 +5,9 @@ $(".upgrade").click(function() {
 });
 
 $(document).ready(function() {
-  $('a[href="#About"]').click(function(event) {
+  $('a').click(function(event) {
     event.preventDefault(); 
-    const about = $('#About');
-    $('html, body').animate({ scrollTop: about.offset().top }, 'slow');
+    const section = $($(this).attr('href'));
+    $('html, body').animate({ scrollTop: section.offset().top }, 'slow');
   });
 });
