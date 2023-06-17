@@ -4,22 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel = "stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>My Website</title>
 </head>
 <body>
-    <div>
-        <a href="#Home">Home</a>
-        <a href="#About">About Me</a>
-        <a href="#Projects">My Projects</a>
+    <div id="Ribbon">
+        <a class="internal-link" href="#Home">Home</a>
+        <a class="internal-link" href="#About">About Me</a>
+        <a class="internal-link" href="#Projects">My Projects</a>
     </div>
-    <div id="Home">
+    <div id="Home" style="display: none;">
+        <div class="card">
+            <div class="titlebar">
+              <span class="buttons">
+              <button class="minimize">
+                <a target="_blank" href="https://www.linkedin.com/in/long-ming-wei/"><i class="fa fa-linkedin-square"></i></a>
+                  </button>
+              <button class="maximize">
+                <a target="_blank" href="https://github.com/LongMingWei"><i class="fa fa-github"></i></a>
+                </button>
+              </span>
+            </div>
+            <div class="cppcode">
+    <pre id="pre"><code>
+<span class="s3">int</span> <span class="s2">main()</span> <span class="curlies">{</span>
+
+    <span class="s4">print</span><span class="rounds">(</span><span class="s1">"Hello, my name is Long Ming Wei, an aspiring </span><span class="s1 typed"></span><span class="s1">developer!"</span><span class="rounds">)</span><span class="sc">;</span>
+    
+<span class="curlies">}</span>
+    </code></pre>
+            </div>
+        </div>
+    </div>
+    <div id="Home1">
         <h1>Hello, my name is Long Ming Wei, an aspiring web/software/game developer!</h1>
         <p>Hmm...this website seems a bit rundown. Time to start upgrading!</p>
+        <a target="_blank" href="https://www.linkedin.com/in/long-ming-wei/">LinkedIn</a>
+        <a target="_blank" href="https://github.com/LongMingWei">Github</a>
     </div>
-    <div id="About">Yo</div>
+    <div id="About">
+        <p>Enter description here</p>
+    </div>
     <div id="Projects">Hello</div>
     <button class="upgrade" type="button">Upgrade</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="upgrader.js"></script>
 </body>
 </html>
