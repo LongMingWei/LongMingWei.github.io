@@ -80,9 +80,8 @@ div#Home {
 .card {
     margin-left: auto;
     margin-right: auto;
-    position: absolute;
     width: 50%;
-    height: 30%;
+    height: 40%;
     background: #15001f;
     border: 1px solid #c042ff;
     font-size: 20px;
