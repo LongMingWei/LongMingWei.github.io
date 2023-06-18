@@ -2,10 +2,72 @@ div {
     margin-bottom: 50px;
 }
 
+#Button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#Button #text {
+  color: red;
+}
+
+.upgrade {
+	box-shadow:inset 0px 1px 0px 0px #54a3f7;
+	background:linear-gradient(to bottom, #007dc1 5%, #0061a7 100%);
+	background-color:#007dc1;
+	border-radius:3px;
+	border:1px solid #124d77;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Verdana;
+	font-size:25px;
+	padding:21px 35px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #154682;
+  width: auto;
+  height: auto;
+}
+.upgrade:hover {
+	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
+	background-color:#0061a7;
+}
+.upgrade:active {
+	position:relative;
+	top:1px;
+}
+
+#Ribbon.upgraded {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 30px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(32, 43, 44);
+  padding: 10px;
+}
+
+#Ribbon.upgraded a {
+  margin-right: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+#Ribbon a:hover {
+  text-decoration: underline;
+}
+
 .card {
     margin-left: auto;
     margin-right: auto;
-    width: 75%;
+    margin-top: 100px;
+    width: 50%;
     height: 50%;
     background: #15001f;
     border: 1px solid #c042ff;
@@ -40,8 +102,8 @@ div {
   
   .buttons i {
     color: #ffffff;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     font-size: 20px;
   }
   
@@ -82,6 +144,7 @@ div {
   
   .s1 {
     color: #22ff00;
+    font-size: 30px;
   }
   
   .s2 {
@@ -102,4 +165,8 @@ div {
   
   .s6 {
     color: #ffff00;
+  }
+
+  .typed-cursor {
+    font-size: 30px;
   }

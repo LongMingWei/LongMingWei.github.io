@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel = "stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>My Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    <title>Greetings, visitor!</title>
 </head>
 <body>
     <div id="Ribbon">
@@ -17,6 +20,9 @@
         <div class="card">
             <div class="titlebar">
               <span class="buttons">
+                <button class="close">
+                    <a id="hoverButton"><i class="fa fa-phone"></i></a>
+                    </button>
               <button class="minimize">
                 <a target="_blank" href="https://www.linkedin.com/in/long-ming-wei/"><i class="fa fa-linkedin-square"></i></a>
                   </button>
@@ -29,24 +35,25 @@
     <pre id="pre"><code>
 <span class="s3">int</span> <span class="s2">main()</span> <span class="curlies">{</span>
 
-    <span class="s4">print</span><span class="rounds">(</span><span class="s1">"Hello, my name is Long Ming Wei, an aspiring </span><span class="s1 typed"></span><span class="s1">developer!"</span><span class="rounds">)</span><span class="sc">;</span>
+    <span class="s4">print</span><span class="rounds">(</span><span id="special"><span class="s1">"Hello, my name is Long Ming Wei, an aspiring </span><span class="s1 typed"></span><span class="s1">developer!"</span></span><span id="special2" style="display: none;"><span class="s1">"Mobile: 82022581,<br> Email: longmw2001@gmail.com"</span></span><span class="rounds">)</span><span class="sc">;</span>
     
 <span class="curlies">}</span>
     </code></pre>
             </div>
         </div>
     </div>
-    <div id="Home1">
-        <a target="_blank" href="https://www.linkedin.com/in/long-ming-wei/">LinkedIn</a>
+    <div id="Home1" style="text-align: center">
+        <a style="margin-right: 20px" target="_blank" href="https://www.linkedin.com/in/long-ming-wei/">LinkedIn</a>
         <a target="_blank" href="https://github.com/LongMingWei">Github</a>
         <h1>Hello, my name is Long Ming Wei, an aspiring web/software/game developer!</h1>
     </div>
     <div id="About" style="display: none;">
+        <h1>About Me</h1>
         <p>Enter description here</p>
     </div>
     <div id="Projects" style="display: none;">Hello</div>
     <div id="Button">
-        <strong style="color: red">Hmm...this website seems a bit rundown. Time to start upgrading!</strong>
+        <strong id="text">Hmm...this website seems a bit rundown. Time to start upgrading!</strong>
         <br><button class="upgrade" type="button">Upgrade</button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
