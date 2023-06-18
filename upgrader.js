@@ -47,5 +47,6 @@ $(".upgrade").click(function() {
 var typed = new Typed('.typed', {
   strings: ["web", "software", "game"],
   typeSpeed: 50,
+  backSpeed: 50,
   loop: true
 });

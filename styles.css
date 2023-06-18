@@ -41,7 +41,7 @@ div {
 
 #Ribbon.upgraded {
   font-family: 'Roboto Mono', monospace;
-  font-size: 30px;
+  font-size: 2rem;
   text-align: right;
   text-transform: uppercase;
   font-weight: bold;
@@ -54,9 +54,10 @@ div {
 }
 
 #Ribbon.upgraded a {
-  margin-right: 20px;
+  margin-right: 1rem;
   color: white;
   text-decoration: none;
+  transition: .3s;
 }
 
 #Ribbon a:hover {
@@ -169,4 +170,22 @@ div {
 
   .typed-cursor {
     font-size: 30px;
+  }
+
+  @media (max-width: 767px) and (orientation: portrait) {
+    #horizontal-message {
+      display: block;
+    }
+  }
+  
+  @media (max-width: 767px) and (orientation: landscape) {
+    #horizontal-message {
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    #horizontal-message {
+      display: none;
+    }
   }
