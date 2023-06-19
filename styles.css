@@ -1,4 +1,4 @@
-div {
+div:not(.titlebar) {
   padding-bottom: 50px;
 }
 
