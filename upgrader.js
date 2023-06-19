@@ -5,8 +5,7 @@ $(document).ready(function() {
     if (linkTarget.startsWith('#')) {
       event.preventDefault();
       const section = $(linkTarget);
-      if (linkTarget == '#Home') {$('html, body').animate({ scrollTop: 0 }, 'slow');}
-      else {$('html, body').animate({ scrollTop: section.offset().top }, 'slow');}
+      $('html, body').animate({ scrollTop: section.offset().top }, 'slow');
     }
   });
 
