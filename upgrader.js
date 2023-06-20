@@ -49,3 +49,4 @@ var typed = new Typed('.typed', {
   backSpeed: 50,
   loop: true
 });
+
