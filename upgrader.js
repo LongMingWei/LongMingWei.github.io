@@ -32,6 +32,14 @@ $(".upgrade").click(function() {
   }
   if (upgrades == 2) {
     $("div#About").addClass("upgraded");
+    ScrollReveal({
+      reset: true,
+      distance: '30px',
+      duration: 1000,
+      origin: 'left'
+    });
+  
+    ScrollReveal().reveal('h1,h3');
     $("div#Projects").toggle();
     $('#text').text('Very nice, just one last upgrade!');
   }
@@ -41,6 +49,44 @@ $(".upgrade").click(function() {
   }
 });
 
+var currentIndex = 0;
+var images = ['desktop.jpg', 'download.jfif', 'image3.jpg'];
+var texts = ['Text 1', 'Text 2', 'Text 3'];
+
+function showSlide(index) {
+  var slideshow = document.querySelector('.slideshow');
+  var img = slideshow.querySelector('img');
+  var text = slideshow.querySelector('.text');
+  var elements = document.querySelectorAll('.fade-in');
+  elements.forEach(function(element) {
+    element.classList.remove('show');
+    setTimeout(function() {
+      img.src = images[index];
+      text.textContent = texts[index];
+      element.classList.add('show');
+    }, 500);
+  });
+  
+  
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + images.length) % images.length;
+  showSlide(currentIndex);
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % images.length;
+  showSlide(currentIndex);
+}
+
+var prevButton = document.querySelector('.prev');
+var nextButton = document.querySelector('.next');
+
+prevButton.addEventListener('click', prevSlide);
+nextButton.addEventListener('click', nextSlide);
+
+showSlide(currentIndex);
 });
 
 var typed = new Typed('.typed', {
@@ -50,3 +96,7 @@ var typed = new Typed('.typed', {
   loop: true
 });
 
+
+     
+        
+    
