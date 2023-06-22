@@ -45,13 +45,18 @@ $(".upgrade").click(function() {
   }
   if (upgrades == 3) {
     $("div#Projects").addClass("upgraded");
+    var left = document.querySelector('#Projects button.prev');
+    left.innerHTML = '<i class="fas fa-hand-point-left"></i>';
+    var right = document.querySelector('#Projects button.next');
+    right.innerHTML = '<i class="fas fa-hand-point-right"></i>';
     $("div#Button").toggle();
   }
 });
 
 var currentIndex = 0;
-var images = ['desktop.jpg', 'download.jfif', 'image3.jpg'];
-var texts = ['Text 1', 'Text 2', 'Text 3'];
+var images = ['simon.jpg', 'hubspot.jpg', 'tiktok.png'];
+var texts = ['A Simon Says game made by pure HTML', 'A form that uses backend and API to transfer data to HubSpot', 'A project done for Tiktok Tech Immersion Programme that simulates an instant messaging system'];
+var links = ['https://github.com/LongMingWei/Random-WebDev-Projects/tree/main/Simon', 'https://github.com/LongMingWei/Random-WebDev-Projects/tree/main/Subscription%20HubSpot%20API', 'https://github.com/LongMingWei/Tiktok-Server-Assignment-main/tree/main/Tiktok_Server_Assignment-main']
 
 function showSlide(index) {
   var slideshow = document.querySelector('.slideshow');
@@ -63,11 +68,19 @@ function showSlide(index) {
     setTimeout(function() {
       img.src = images[index];
       text.textContent = texts[index];
-      element.classList.add('show');
+      text.href = links[index];
+      
+      elements.forEach(function(element) {
+        element.classList.add('show');
+      });
+      
+      var prevButton = document.querySelector('button.prev');
+      var nextButton = document.querySelector('button.next');
+      
+      prevButton.addEventListener('click', prevSlide);
+      nextButton.addEventListener('click', nextSlide);
     }, 500);
   });
-  
-  
 }
 
 function prevSlide() {
@@ -78,10 +91,11 @@ function prevSlide() {
 function nextSlide() {
   currentIndex = (currentIndex + 1) % images.length;
   showSlide(currentIndex);
+  console.log("Next");
 }
 
-var prevButton = document.querySelector('.prev');
-var nextButton = document.querySelector('.next');
+var prevButton = document.querySelector('button.prev');
+var nextButton = document.querySelector('button.next');
 
 prevButton.addEventListener('click', prevSlide);
 nextButton.addEventListener('click', nextSlide);
@@ -90,7 +104,7 @@ showSlide(currentIndex);
 });
 
 var typed = new Typed('.typed', {
-  strings: ["web", "software", "game"],
+  strings: ["web", "game", "software"],
   typeSpeed: 50,
   backSpeed: 50,
   loop: true

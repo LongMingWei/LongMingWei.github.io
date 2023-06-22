@@ -139,7 +139,7 @@ div#About h3 {
     text-align: right;
   }
   
-  button {
+  .buttons button {
     width: 40px;
     height: 35px;
     margin-left: -5px;
@@ -261,32 +261,61 @@ div#About h3 {
     text-align: center;
     color: #000000;
     font-size: 24px;
+    background-color: rgba(110, 110, 110, 0.75);
   }
 
-  /* .slideshow .upgraded .text {
+  .slideshow.upgraded .text {
     font-family: 'Roboto Mono', monospace;
-    color: white;
-  } */
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+  } 
 
   .slideshow .prev,
   .slideshow .next {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 10px;
+    color: #ff0000;
+    font-size: 5rem;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .slideshow.upgraded button {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+  }
+  
+  .slideshow.upgraded button i {
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .slideshow.upgraded .prev i:hover {
+    transform: translateX(-10px);
+  }
+
+  .slideshow.upgraded .next i:hover {
+    transform: translateX(10px);
   }
 
   .slideshow .prev {
-    left: 10px;
+    left: 5%;
   }
 
   .slideshow .next {
-    right: 10px;
+    right: 5%;
   }
 
+  div#Projects.upgraded button i {
+    color: #e100ff;
+    width: 5rem;
+    height: 5rem;
+    font-size: 5rem;
+    display: flex;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  
   .fade-in {
     opacity: 0;
     transition: opacity 0.5s ease;
