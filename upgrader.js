@@ -24,6 +24,7 @@ $(document).ready(function() {
 $(".upgrade").click(function() {
   upgrades++;
   if (upgrades == 1) {
+    $("div#horizontal-message").toggle();
     $("div#Home1").toggle();
     $("div#Home").toggle();
     $("div#Ribbon").addClass("upgraded");
