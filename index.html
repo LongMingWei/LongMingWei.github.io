@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles.css" rel = "stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +25,7 @@
         <div class="card">
             <div class="titlebar">
               <span class="buttons">
-                <button class="close">
+                <button class="close1">
                     <a id="hoverButton"><i class="fa fa-phone"></i></a>
                     </button>
               <button class="minimize">
@@ -47,10 +48,10 @@
     <div id="Home1" style="text-align: center">
         <a style="margin-right: 20px" target="_blank" href="https://www.linkedin.com/in/long-ming-wei/">LinkedIn</a>
         <a target="_blank" href="https://github.com/LongMingWei">Github</a>
-        <h1>Hello, my name is Long Ming Wei, an aspiring web/software/game developer!</h1>
+        <h1>Hello World! I am Ming Wei, an aspiring web/software/game developer!</h1>
     </div>
     <div id="About" style="display: none;">
-        <h1>About Me</h1>
+        <h1><strong>About Me</strong></h1>
         <h3>Welcome to my personal website! I'm thrilled to have you here. Allow me to introduce myself — I'm a passionate, versatile and open-minded computer science and business student who is seeking real world opportunities to leverage and enhance his existing skills while acquiring new ones through expert mentorship and practical application.</h3>
 <h3>During the early stages of my academic journey, I underestimated my own abilities and often found myself stuck in my comfort zone. However, as I found myself outperforming my own expectations when completing tasks under pressure, I quickly realized that the only way to truly upgrade (just like this website) is by challenging oneself and embracing new experiences, thus starting to take the initiative to participate in school clubs and hackathons.</h3>
 <h3>I have also self-taught fundamentals of various technical skills that enable me to express and expand my creativity, one of them being web development. I delved into HTML, CSS, and JavaScript, learning how to craft beautiful and functional websites that came to life with every click. I also learnt the importance of designing websites based on user experience as they should be easy to read, navigate and use.</h3>
@@ -60,17 +61,95 @@
 <h3>This website serves as a testament to my growth and showcases the projects I've undertaken. Join me as I continue to explore new frontiers, sharpen my skills, and embrace the never-ending journey of learning and development. I'm excited to share my experiences, insights, and creations with you, and I hope you'll find inspiration and enjoyment in this digital space.</h3>
 <h3>Thank you for visiting, and I look forward to connecting and maybe even collaborate on exciting projects with you!</h3>
     </div>
-    <div class="slideshow" id="Projects" style="display: none;">
+    <div id="Projects" class="container-fluid text-center" style="display: none;">
+      <h3 class="text-center display-4">My Projects</h3>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ul class="carousel-indicators" style="position: relative;">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1" class=""></li>
+                <li data-target="#demo" data-slide-to="2" class=""></li>
+                <li data-target="#demo" data-slide-to="3" class=""></li>
+            </ul>
+        
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <h4>
+                            Froggers 
+                        </h4>
+                        <span>A game made for NTU Game Development Workshop 2023
+                        </span>
+                        <br>
+                        <br>
+                        <a target="_blank" class="btn btn-outline-secondary" href="https://longmingwei.github.io/NTU-Game-Dev-2023-Workshop-Project/">Open</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h4>
+                            Anomalous
+                        </h4>
+                        <span>A 2D Metroidvania survival horror immersive sim roguelike
+                            <br>Entry for GDWC/IGF 2024
+                        </span>
+                        <br>
+                        <br>
+                        <a target="_blank" class="btn btn-outline-secondary">Work in progress</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h4>
+                            Online Art Store
+                        </h4>
+                        <span>
+                            Designed and implemented a Shopify website for Cheng Hong Welfare Service Society,
+                            handling most Singaporean payment methods and optimising SEO to increase sales
+                        </span>
+                        <br>
+                        <br>
+                        <a target="_blank" class="btn btn-outline-secondary">Work in progress</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h4>
+                            Pioneer Technical Head of MARVEL (Game Dev) Club @ NTU 
+                        </h4>
+                        <span>
+                            Role is to organize and conduct game development workshops including Unity, art creation and 
+                            game design as student trainers. Also in charge of developing the club website.
+                        </span>
+                        <br>
+                        <br>
+                        <a target="_blank" class="btn btn-outline-secondary">Work in progress</a>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                <span>&lt;</span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+                <span>&gt;</span>
+            </a>
+        </div></div>
+    <!-- <div class="slideshow" id="Projects" style="display: none;">
         <img class="fade-in">
         <a class="text fade-in" target="_blank" href=""></a>
         <button class="prev">&lt;</button>
         <button class="next">&gt;</button>
-      </div>
+    </div> -->
     <div id="Button">
         <strong id="text">Hmm...this website seems a bit rundown. Time to start upgrading!</strong>
         <br><button class="upgrade" type="button">Upgrade</button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="upgrader.js"></script>

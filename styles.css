@@ -3,11 +3,6 @@
   padding: 0;
 }
 
-
-div:not(.titlebar,.cppcode,.slideshow) {
-  padding-bottom: 30px;
-}
-
 div.upgraded {
   background-color: rgb(252, 189, 246);
 }
@@ -35,6 +30,7 @@ div#About.upgraded {
 div#About h1, h3 {
   margin-left: 1rem;
   margin-right: 1rem;
+  margin-bottom: 1rem;
 }
 
 div#About h1 {
@@ -73,10 +69,12 @@ div#About h3 {
   width: auto;
   height: auto;
 }
+
 .upgrade:hover {
 	background:linear-gradient(to bottom, #0061a7 5%, #007dc1 100%);
 	background-color:#0061a7;
 }
+
 .upgrade:active {
 	position:relative;
 	top:1px;
@@ -121,6 +119,7 @@ div#About h3 {
   }
 
   .cppcode {
+    background: #15001f;
     padding: 10px;
   }
 
@@ -240,7 +239,58 @@ div#About h3 {
     }
   }
 
-  .slideshow {
+  div#Projects {
+    margin-top: -10px;
+    padding-top: 30px;
+  }
+
+  div#Projects h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+
+  div#Projects a span,i {
+    color: #15001f;
+    font-size: 2rem; 
+  }
+
+  div#Projects.upgraded {
+    font-family: 'Roboto Mono', monospace;
+    padding-bottom: 100px;
+  }
+
+  div#Projects h3 {
+    padding-bottom: 10px;
+    font-weight: bold;
+  }
+
+  div#Projects a span,i {
+    color: #15001f;
+    font-size: 2rem; 
+  }
+
+  .carousel-item .container {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+  div#Projects.upgraded .carousel-item {
+    transition: -webkit-transform .6s ease;
+    transition: transform .6s ease;
+    transition: transform .6s ease,-webkit-transform .6s ease;
+  }
+
+  div#Projects.upgraded a.carousel-control-prev:hover {
+    transform: translateX(-10px);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  div#Projects.upgraded a.carousel-control-next:hover {
+    transform: translateX(10px);
+    transition: transform 0.2s ease-in-out;
+  }
+
+  /* .slideshow {
     position: relative;
     width: 100%;
     height: 1000px;
@@ -323,4 +373,8 @@ div#About h3 {
 
   .fade-in.show {
     opacity: 1;
-  }
+  } */
+
+  
+
+  
