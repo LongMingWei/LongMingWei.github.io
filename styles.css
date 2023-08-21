@@ -34,11 +34,13 @@ div#About h1, h3 {
 }
 
 div#About h1 {
-  font-size: 5rem;
+  font-size: 3rem;
+  text-align: center;
 }
 
 div#About h3 {
   padding-bottom: 1.5rem;
+  font-size: 1rem;
 }
 
 #Button {
@@ -244,9 +246,10 @@ div#About h3 {
     padding-top: 30px;
   }
 
-  div#Projects h3 {
+  div#Projects.upgraded .text-center.display-4 {
     padding-bottom: 10px;
     font-weight: bold;
+    font-size: 3rem;
   }
 
   div#Projects a span,i {
