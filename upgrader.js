@@ -32,7 +32,7 @@ $('#hoverButton').mouseleave(function() {
 $(".upgrade").click(function() {
   upgrades++;
   if (upgrades == 1) {
-    $("div#horizontal-message").toggle();
+    // $("div#horizontal-message").toggle();
     $("div#Home1").toggle();
     $("div#Home").toggle();
     $("div#Ribbon").addClass("upgraded");
@@ -40,15 +40,16 @@ $(".upgrade").click(function() {
     $("#text").text("Much better, but still not good enough");
   }
   if (upgrades == 2) {
+    $("div#About img").toggle();
     $("div#About").addClass("upgraded");
     ScrollReveal({
       reset: true,
-      distance: '30px',
-      duration: 1000,
+      distance: '100px',
+      duration: 2000,
       origin: 'left'
     });
   
-    ScrollReveal().reveal('h1,h3');
+    ScrollReveal().reveal('img,h1,h3');
     $("div#Projects").toggle();
     $('#text').text('Very nice, just one last upgrade!');
   }
@@ -61,6 +62,15 @@ $(".upgrade").click(function() {
     $("div#Button").toggle();
   }
 });
+});
+
+var typed = new Typed('.typed', {
+  strings: ["game", "web", "software"],
+  typeSpeed: 50,
+  backSpeed: 50,
+  loop: true
+});
+        
 
 // var currentIndex = 0;
 // var images = ['simon.jpg', 'hubspot.jpg', 'tiktok.png'];
@@ -111,14 +121,5 @@ $(".upgrade").click(function() {
 
 // showSlide(currentIndex);
 // });
-
-
-});
      
-var typed = new Typed('.typed', {
-  strings: ["game", "web", "software"],
-  typeSpeed: 50,
-  backSpeed: 50,
-  loop: true
-});
-        
+

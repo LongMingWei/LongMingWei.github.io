@@ -12,19 +12,21 @@ div#Home {
   background-size: cover; 
   background-repeat: no-repeat;
   width: 100%;
-  height: 1000px;
+  height: 800px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: pink;
+  overflow: hidden;
 }
 
 div#About.upgraded {
   width: 100%;
   height: 100%;
   font-family: 'Roboto Mono', monospace;
-  padding-top: 30px;
+  padding: 30px;
+  background-image: linear-gradient(rgba(247,167,255,255), rgb(252, 139, 233));
 }
 
 div#About h1, h3 {
@@ -34,13 +36,19 @@ div#About h1, h3 {
 }
 
 div#About h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   text-align: center;
 }
 
 div#About h3 {
-  padding-bottom: 1.5rem;
-  font-size: 1rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 2rem;
+  font-size: 1.25rem;
+}
+
+div#About img {
+  height: 100%;
 }
 
 #Button {
@@ -52,6 +60,9 @@ div#About h3 {
 
 #Button #text {
   color: red;
+  font-size: 2rem;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .upgrade {
@@ -64,12 +75,13 @@ div#About h3 {
 	cursor:pointer;
 	color:#ffffff;
 	font-family:Verdana;
-	font-size:25px;
+	font-size:60px;
 	padding:21px 35px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #154682;
   width: auto;
   height: auto;
+  margin-bottom: 5rem;
 }
 
 .upgrade:hover {
@@ -111,6 +123,8 @@ div#About h3 {
 .card {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: auto;
+    margin-top: 15rem;
     width: 50%;
     height: auto;
     background: #15001f;
@@ -220,12 +234,28 @@ div#About h3 {
     font-size: 30px;
   }
 
+  #horizontal-message {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    right: 0; 
+    background-color: rgb(68, 68, 68); 
+    color: white; 
+    padding: 10px;
+    text-align: center;
+    z-index: 11;
+    word-wrap: break-word;
+    height: 100%;
+    font-size: 4rem;
+  }
+
   @media (max-width: 767px) and (orientation: portrait) {
     #horizontal-message {
       display: block;
-      font-size: 5rem;
-      color: red;
-      font-family:Verdana;
+    }
+
+    div#About .wrapper {
+      display: block;
     }
   }
   
@@ -233,11 +263,19 @@ div#About h3 {
     #horizontal-message {
       display: none;
     }
+
+    div#About .wrapper {
+      display: block;
+    }
   }
 
   @media (min-width: 768px) {
     #horizontal-message {
       display: none;
+    }
+
+    div#About .wrapper {
+      display: flex;
     }
   }
 
@@ -249,17 +287,18 @@ div#About h3 {
   div#Projects.upgraded .text-center.display-4 {
     padding-bottom: 10px;
     font-weight: bold;
-    font-size: 3rem;
+    font-size: 4rem;
   }
 
-  div#Projects a span,i {
+  div#Projects.upgraded i {
     color: #15001f;
-    font-size: 2rem; 
+    font-size: 3rem; 
   }
 
   div#Projects.upgraded {
     font-family: 'Roboto Mono', monospace;
     padding-bottom: 100px;
+    background-color: rgb(252, 139, 233);
   }
 
   div#Projects h3 {
@@ -267,9 +306,14 @@ div#About h3 {
     font-weight: bold;
   }
 
-  div#Projects a span,i {
+  div#Projects h4 {
     color: #15001f;
     font-size: 2rem; 
+  }
+
+  div#Projects span {
+    color: #15001f;
+    font-size: 1.25rem; 
   }
 
   .carousel-item .container {
@@ -291,6 +335,20 @@ div#About h3 {
   div#Projects.upgraded a.carousel-control-next:hover {
     transform: translateX(10px);
     transition: transform 0.2s ease-in-out;
+  }
+
+  *::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: rgb(32, 43, 44);;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #b167c5;
+    border-radius: 10px;
+    border: 3px solid rgb(32, 43, 44);;
   }
 
   /* .slideshow {
