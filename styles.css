@@ -249,7 +249,7 @@ div#About img {
     font-size: 4rem;
   }
 
-  @media (max-width: 767px) and (orientation: portrait) {
+  @media (max-width: 1000px) and (orientation: portrait) {
     #horizontal-message {
       display: block;
     }
@@ -259,7 +259,7 @@ div#About img {
     }
   }
   
-  @media (max-width: 767px) and (orientation: landscape) {
+  @media (max-width: 1000px) and (orientation: landscape) {
     #horizontal-message {
       display: none;
     }
@@ -269,7 +269,7 @@ div#About img {
     }
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 1000px) {
     #horizontal-message {
       display: none;
     }
