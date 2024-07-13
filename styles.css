@@ -63,6 +63,7 @@ div#About img {
   font-size: 2rem;
   margin-top: 1rem;
   text-align: center;
+  text-decoration: underline;
 }
 
 .upgrade {
