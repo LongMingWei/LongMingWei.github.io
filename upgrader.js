@@ -32,9 +32,8 @@ $('#hoverButton').mouseleave(function() {
 $(".upgrade").click(function() {
   upgrades++;
   if (upgrades == 1) {
-    // $("div#horizontal-message").toggle();
-    $("div#Home1").toggle();
     $("div#Home").toggle();
+    $("div#Ribbon").toggle();
     $("div#Ribbon").addClass("upgraded");
     $("div#About").toggle();
     $("#text").text("Much better, but still not good enough");
