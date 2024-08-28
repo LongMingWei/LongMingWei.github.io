@@ -27,6 +27,22 @@ $('#hoverButton').mouseleave(function() {
   }
 });
 
+$('#hoverButton1').mouseover(function() {
+  if (!isToggling) {
+    isToggling = true;
+    $('#special').toggle();
+    $('#special2').toggle();
+  }
+});
+
+$('#hoverButton1').mouseleave(function() {
+  if (isToggling) {
+    isToggling = false;
+    $('#special').toggle();
+    $('#special2').toggle();
+  }
+});
+
   var upgrades = 0;
 
 $(".upgrade").click(function() {
@@ -48,7 +64,7 @@ $(".upgrade").click(function() {
       origin: 'left'
     });
   
-    ScrollReveal().reveal('img,h1,h3');
+    ScrollReveal().reveal('h1,h3');
     $("div#Projects").toggle();
     $('#text').text('Very nice, just one last upgrade!');
   }
@@ -69,56 +85,4 @@ var typed = new Typed('.typed', {
   backSpeed: 50,
   loop: true
 });
-        
-
-// var currentIndex = 0;
-// var images = ['simon.jpg', 'hubspot.jpg', 'tiktok.png'];
-// var texts = ['A Simon Says game made by pure HTML', 'A form that uses backend and API to transfer data to HubSpot', 'A project done for Tiktok Tech Immersion Programme that simulates an instant messaging system'];
-// var links = ['https://github.com/LongMingWei/Random-WebDev-Projects/tree/main/Simon', 'https://github.com/LongMingWei/Random-WebDev-Projects/tree/main/Subscription%20HubSpot%20API', 'https://github.com/LongMingWei/Tiktok-Server-Assignment-main/tree/main/Tiktok_Server_Assignment-main']
-
-// function showSlide(index) {
-//   var slideshow = document.querySelector('.slideshow');
-//   var img = slideshow.querySelector('img');
-//   var text = slideshow.querySelector('.text');
-//   var elements = document.querySelectorAll('.fade-in');
-//   elements.forEach(function(element) {
-//     element.classList.remove('show');
-//     setTimeout(function() {
-//       img.src = images[index];
-//       text.textContent = texts[index];
-//       text.href = links[index];
-      
-//       elements.forEach(function(element) {
-//         element.classList.add('show');
-//       });
-      
-//       var prevButton = document.querySelector('button.prev');
-//       var nextButton = document.querySelector('button.next');
-      
-//       prevButton.addEventListener('click', prevSlide);
-//       nextButton.addEventListener('click', nextSlide);
-//     }, 500);
-//   });
-// }
-
-// function prevSlide() {
-//   currentIndex = (currentIndex - 1 + images.length) % images.length;
-//   showSlide(currentIndex);
-// }
-
-// function nextSlide() {
-//   currentIndex = (currentIndex + 1) % images.length;
-//   showSlide(currentIndex);
-//   console.log("Next");
-// }
-
-// var prevButton = document.querySelector('button.prev');
-// var nextButton = document.querySelector('button.next');
-
-// prevButton.addEventListener('click', prevSlide);
-// nextButton.addEventListener('click', nextSlide);
-
-// showSlide(currentIndex);
-// });
-     
 

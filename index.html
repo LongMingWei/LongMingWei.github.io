@@ -9,9 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/323e59e7fa.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
     <meta name="keywords" content="computer science, computing, software developer, developer, AI, artificial intelligence, game developer, game design, web developer" />
-    <title>Welcome to Long Ming Wei's portfolio!'</title>
+    <title>Welcome to Long Ming Wei's portfolio!</title>
 </head>
 <body>
     <div id="Ribbon" style="display: none;">
@@ -24,13 +25,19 @@
             <div class="titlebar">
               <span class="buttons">
                 <button class="close1">
-                    <a id="hoverButton"><i class="fa fa-phone"></i></a>
-                    </button>
+                    <a id="hoverButton" href="tel:+6582022581"><i class="fa fa-phone"></i></a>
+                </button>
+                <button class="close1">
+                    <a id="hoverButton1" href="mailto:longmw2001@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                </button>
               <button class="minimize">
                 <a target="_blank" href="https://www.linkedin.com/in/long-ming-wei/"><i class="fa fa-linkedin-square"></i></a>
                   </button>
               <button class="maximize">
                 <a target="_blank" href="https://github.com/LongMingWei"><i class="fa fa-github"></i></a>
+                </button>
+                <button class="maximize">
+                    <a target="_blank" href="https://boldactionman.itch.io/"><i class="fa-solid fa-gamepad"></i></a>
                 </button>
               </span>
             </div>
@@ -46,9 +53,16 @@
     <div id="About" style="display: none;">
         <h1><strong>About Me</strong></h1>
         <div class="wrapper">
-        <img src="web-design.png" style="display: none;">
-        <h3>Welcome to my personal website! I'm an independent, versatile and quick learner who is eager to apply and upgrade my existing skills (just like this website) and learn new ones through meaningful real-life work experiences, having self-taught many technical skills that also allow me to utilize my creativity. Some examples include web and software development which not only allows me to craft functional yet beautiful websites and applications, but also find creative solutions to solve programming puzzles. Game development is also one of my major interests, allowing me to turn my game design ideas and interesting player experiences into reality. Through several opportunities to challenge myself together with like-minded individuals in projects related to these fields and more, I have also gained many soft skills such as adaptability and communication. This website serves as a showcase of my projects and my learning journey!</h3>
+        <img src="images/web-design.png" style="display: none;">
+        <div>
+        <h3>Welcome to my personal website! I am Ming Wei, a penultimate Business and Computing undergraduate. Just like this website, I am also constantly upgrading myself. As a self-motivated and adaptable individual with a passion for learning and problem-solving, I have honed my skills in software and game development through independent study, personal projects, and active participation in hackathons and game jams, and recently I have been keeping up with AI trends and implemented some of them into AI projects. My ability to quickly grasp new concepts and bring creative ideas to life has enabled me to develop a solid foundation in various programming tools and techniques.</h3>
+            <br>
+        <h3>I am eager to leverage my skills and knowledge in a dynamic and real world hands-on environment where I can contribute to innovative projects and collaborate with talented professionals.
+        My diverse academic background in Business and Computing has equipped me with a strong blend of technical and interpersonal skills. I am confident in my ability to adapt to new challenges, think critically, and deliver results.</h3>
+            <br>
+        <h3>This website serves as a showcase of my projects and my learning journey, and will constantly be updating. I hope you will find the projects meaningful and fun!</h3>
         </div>
+    </div>
     </div>
     <div id="Projects" class="container-fluid text-center" style="display: none;">
       <h3 class="text-center display-4">My Projects</h3>
@@ -62,6 +76,8 @@
                 <li data-target="#demo" data-slide-to="4" class=""></li>
                 <li data-target="#demo" data-slide-to="5" class=""></li>
                 <li data-target="#demo" data-slide-to="6" class=""></li>
+                <li data-target="#demo" data-slide-to="7" class=""></li>
+                <li data-target="#demo" data-slide-to="8" class=""></li>
             </ul>
         
             <!-- The slideshow -->
@@ -69,10 +85,42 @@
                 <div class="carousel-item active">
                     <div class="container">
                         <h4>
-                            The Lobotomy Interface Experience
+                            Video Translator with Voice Cloning-and Subtitles
                         </h4>
                         <span>
-                            A puzzle game where you have to navigate through unusual UI to buy a game on Steam before the sale ends. Made during the 48 hour Global Game Jam 2024.
+                            Translates a video (audio included) with voice cloning and subtitle generation included. Made with Python, OpenVoice/Whisper and Gradio.
+                        </span>
+                        <br>
+                        <br>
+                        <a target="_blank" class="btn btn-secondary btn-lg" href="https://huggingface.co/spaces/BoldActionMan/Video-Translator-with-Voice-Cloning-and-Subtitles">Try the demo</a>
+                        <a target="_blank" class="btn btn-secondary btn-lg" href="https://github.com/LongMingWei/Video-Translator-with-Voice-Cloning-and-Subtitles/tree/main">GitHub repo</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h4>
+                            Face and Voice Recognition with Fake Detection
+                        </h4>
+                        <img src="images/Face Recognition.jpg" style="display: hidden;">
+                        <br>
+                        <span>
+                            Simulates an attendance system that uses face and voice recognition to verify a user, with fake detection added as well. Made with Python, OpenCV, MongoDB and Gradio.
+                        </span>
+                        <br>
+                        <br>
+                        <a target="_blank" class="btn btn-secondary btn-lg" href="https://huggingface.co/spaces/BoldActionMan/Facial-and-Voice-Recognition-with-Fake-Detection">Try the demo</a>
+                        <a target="_blank" class="btn btn-secondary btn-lg" href="https://github.com/LongMingWei/Face-and-Voice-Recognition-Attendance-System/tree/main">GitHub repo</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h4>
+                            The Lobotomy Interface Experience
+                        </h4>
+                        <img src="images/Lobotomy Interface Experience.jpg">
+                        <br>
+                        <span>
+                            A puzzle game where you have to navigate through unusual UI to buy a game on Steam before the sale ends. Made during the 48 hour Global Game Jam 2024 and shortlisted to showcase at SGGA Industry Day.
                         </span>
                         <br>
                         <br>
@@ -84,6 +132,8 @@
                         <h4>
                             Distraction Detox
                         </h4>
+                        <img src="images/DistractionAI.jpg">
+                        <br>
                         <span>
                             Submission for MLDA Deep Learning Week 2024. Personalized app to prevent students from being distracted from their work and studies. Made using Python and Gemini Pro Vision API
                         </span>
@@ -97,12 +147,14 @@
                         <h4>
                             Telegrammer (Messaging App)
                         </h4>
+                        <img src="images/Telegrammer.jpg">
+                        <br>
                         <span>
                             A fullstack (frontend & backend) independent project using Next.js, React.js, MongoDB and more. More details in GitHub repo README.
                         </span>
                         <br>
                         <br>
-                        <a target="_blank" class="btn btn-secondary btn-lg" href="https://telegrammer-ebon.vercel.app/">Open</a>
+                        <a target="_blank" class="btn btn-secondary btn-lg" href="https://telegrammer-ebon.vercel.app/">Try the app</a>
                         <a target="_blank" class="btn btn-secondary btn-lg" href="https://github.com/LongMingWei/Telegrammer">GitHub repo</a>
                     </div>
                 </div>
@@ -111,12 +163,30 @@
                         <h4>
                             Online Art Store for Cheng Hong Welfare Service Society (CHWSS)
                         </h4>
+                        <img src="images/CHWSS logo.png">
+                        <br>
                         <span>
-                            Utilized UI/UX principles to design and implement an online art store interface for CHWSS on Shopify (with custom HTML/CSS code) with optimisation of SEO to increase outreach
+                            Design and implement an online art store interface from scratch for CHWSS on Shopify (with custom HTML/CSS code) with optimisation of SEO to increase outreach
                         </span>
                         <br>
                         <br>
                         <a target="_blank" class="btn btn-secondary btn-lg" href="https://shop.chenghongwelfare.org/">Open</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <h4>
+                            Anomalous
+                        </h4>
+                        <img src="images/Anomalous.png">
+                        <br>
+                        <span>
+                            A 2D Metroidvania survival horror game
+                            <br>NTU URECA Project, submitted for GDWC/IGF 2024
+                        </span>
+                        <br>
+                        <br>
+                        <a target="_blank" class="btn btn-secondary btn-lg" href="https://boldactionman.itch.io/anomalous">Play</a>
                     </div>
                 </div>
                 <div class="carousel-item">
@@ -147,34 +217,6 @@
                         <a target="_blank" class="btn btn-secondary btn-lg" href="https://longmingwei.github.io/Simon/">Simon Says</a>
                     </div>
                 </div>
-                <div class="carousel-item">
-                    <div class="container">
-                        <h4>
-                            Anomalous
-                        </h4>
-                        <span>
-                            A 2D Metroidvania survival horror game
-                            <br>NTU URECA Project, to be submitted for GDWC/IGF 2024
-                        </span>
-                        <br>
-                        <br>
-                        <a target="_blank" class="btn btn-secondary btn-lg" href="#" onclick="return false;">Work in progress</a>
-                    </div>
-                </div>
-                <!-- <div class="carousel-item">
-        <div class="container">
-            <h4>
-                Pioneer Technical Head of MARVEL (Game Dev) Club @ NTU
-            </h4>
-            <span>
-                Role is to organize and conduct game development workshops including Unity, art creation and
-                game design as student trainers. Also in charge of developing the club website.
-            </span>
-            <br>
-            <br>
-            <a target="_blank" class="btn btn-secondary btn-lg">Work in progress</a>
-        </div>
-    </div> -->
             </div>
         
             <!-- Left and right controls -->
@@ -185,20 +227,13 @@
                 <span>&gt;</span>
             </a>
         </div></div>
-    <!-- <div class="slideshow" id="Projects" style="display: none;">
-        <img class="fade-in">
-        <a class="text fade-in" target="_blank" href=""></a>
-        <button class="prev">&lt;</button>
-        <button class="next">&gt;</button>
-    </div> -->
     <div id="Button">
-        <strong id="text">Hmm...this website seems a bit rundown. Time to start upgrading!</strong>
+        <strong id="text">Press the Upgrade button below to start filling this empty void!</strong>
         <br><button class="upgrade" type="button">Upgrade</button>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="upgrader.js"></script>
 </body>
